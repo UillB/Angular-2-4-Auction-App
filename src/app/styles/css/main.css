@@ -1,0 +1,1149 @@
+body {
+  background-color: #F7F7F7; }
+
+.loader {
+  text-align: center;
+  color: red;
+  font-size: 50px;
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  margin-top: 300px;
+  padding: auto; }
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.header {
+  margin: 20px 0; }
+
+.sell-button {
+  background-color: #ADB61B;
+  width: 100px;
+  padding: 3px 0;
+  border: none;
+  border-radius: 1px;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white; }
+  .sell-button:hover {
+    color: white;
+    background-color: #757E2A;
+    transition: 1s; }
+
+.header-name {
+  margin-left: 10px;
+  font-size: 16px; }
+
+.navbar-nav {
+  display: table;
+  width: 100%;
+  margin: 0; }
+  .navbar-nav li {
+    float: none;
+    display: table-cell;
+    text-align: center;
+    width: 14%;
+    background-color: #F5F3ED;
+    border-bottom: 2px solid #BEBFBA; }
+    @media screen and (max-width: 768px) {
+      .navbar-nav li {
+        display: block;
+        width: auto;
+        text-align: center;
+        padding: 10px 0; } }
+    .navbar-nav li a {
+      padding: 10px 0;
+      margin: 0;
+      color: #767571;
+      letter-spacing: -1px;
+      font-weight: bold; }
+      .navbar-nav li a .navigation-icons {
+        font-size: 22px;
+        margin-top: 0;
+        margin-left: 10px; }
+  .navbar-nav .all-auctions {
+    background-color: #EAE9DE;
+    border-top: 5px solid #CACCC2; }
+    .navbar-nav .all-auctions #all-items-icon {
+      display: none; }
+      @media screen and (max-width: 768px) {
+        .navbar-nav .all-auctions #all-items-icon {
+          display: block;
+          opacity: 0; } }
+    .navbar-nav .all-auctions a:hover {
+      background-color: #E9EBE1;
+      color: #FBFBFB; }
+  .navbar-nav .electronics {
+    border-top: 5px solid #FEB72B; }
+    .navbar-nav .electronics:hover {
+      background-color: #FFC93D;
+      color: #FBFBFB; }
+    .navbar-nav .electronics a:hover {
+      background-color: #FFC93D;
+      color: #FBFBFB; }
+      .navbar-nav .electronics a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .electronics i {
+      color: #FEB72B; }
+  .navbar-nav .fashion {
+    border-top: 5px solid #AA288E; }
+    .navbar-nav .fashion:hover {
+      background-color: #BD3BA1;
+      color: #FBFBFB; }
+    .navbar-nav .fashion a:hover {
+      background-color: #BD3BA1;
+      color: #FBFBFB; }
+      .navbar-nav .fashion a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .fashion i {
+      color: #AA288E; }
+  .navbar-nav .home {
+    border-top: 5px solid #62C6CE; }
+    .navbar-nav .home:hover {
+      background-color: #90F4FC;
+      color: #FBFBFB; }
+    .navbar-nav .home a:hover {
+      background-color: #90F4FC;
+      color: #FBFBFB; }
+      .navbar-nav .home a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .home i {
+      color: #62C6CE; }
+  .navbar-nav .books {
+    border-top: 5px solid #8361C0; }
+    .navbar-nav .books:hover {
+      background-color: #9775D4;
+      color: #FBFBFB; }
+    .navbar-nav .books a:hover {
+      background-color: #9775D4;
+      color: #FBFBFB; }
+      .navbar-nav .books a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .books i {
+      color: #8361C0; }
+  .navbar-nav .children {
+    border-top: 5px solid #EA2F6D; }
+    .navbar-nav .children:hover {
+      background-color: #FF4D8B;
+      color: #FBFBFB; }
+    .navbar-nav .children a:hover {
+      background-color: #FF4D8B;
+      color: #FBFBFB; }
+      .navbar-nav .children a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .children i {
+      color: #EA2F6D; }
+  .navbar-nav .misc {
+    border-top: 5px solid #E07D32; }
+    .navbar-nav .misc:hover {
+      background-color: #FE9B50;
+      color: #FBFBFB; }
+    .navbar-nav .misc a:hover {
+      background-color: #FE9B50;
+      color: #FBFBFB; }
+      .navbar-nav .misc a:hover i {
+        color: #FBFBFB; }
+    .navbar-nav .misc i {
+      color: #E07D32; }
+
+.content .content-electronics, .content .content-fashion, .content .content-home {
+  height: 370px;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 7px solid #FEB72B;
+  position: relative; }
+  .content .content-electronics #content-img, .content .content-fashion #content-img, .content .content-home #content-img {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 218px; }
+  .content .content-electronics .bid, .content .content-fashion .bid, .content .content-home .bid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 45%;
+    float: left;
+    z-index: 1000; }
+  .content .content-electronics .delete-auction, .content .content-fashion .delete-auction, .content .content-home .delete-auction {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 18%;
+    font-size: 28px;
+    float: right;
+    z-index: 1000;
+    border: none;
+    border-radius: 0;
+    padding-left: 14px; }
+    .content .content-electronics .delete-auction:hover, .content .content-fashion .delete-auction:hover, .content .content-home .delete-auction:hover {
+      cursor: pointer;
+      color: white;
+      background-color: red;
+      transition: 0.4s;
+      opacity: 0.7; }
+
+.content .content-description {
+  position: absolute;
+  top: 255px;
+  left: 4px;
+  right: 3px; }
+
+.content .seller-info {
+  width: 96%;
+  position: absolute;
+  top: 335px;
+  left: 4px;
+  font-size: 12px; }
+  .content .seller-info .seller-mail {
+    color: #3AE2CE; }
+  .content .seller-info .time-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right; }
+
+.content .content-fashion {
+  border-bottom: 7px solid #AA288E; }
+
+.content .content-home {
+  border-bottom: 7px solid deepskyblue; }
+
+.content .content-home {
+  height: 370px;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 7px solid #62C6CE;
+  position: relative; }
+  .content .content-home #content-img {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 218px; }
+  .content .content-home .bid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 45%;
+    float: left;
+    z-index: 1000; }
+
+.content .delete-auction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 3px 23px;
+  opacity: 0.8;
+  width: 18%;
+  font-size: 28px;
+  float: right;
+  z-index: 1000;
+  border: none;
+  border-radius: 0;
+  padding-left: 14px; }
+  .content .delete-auction:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: 0.4s;
+    opacity: 0.7; }
+
+.content .content-description {
+  position: absolute;
+  top: 255px;
+  left: 4px;
+  right: 3px; }
+
+.content .seller-info {
+  width: 96%;
+  position: absolute;
+  top: 335px;
+  left: 4px;
+  font-size: 12px; }
+  .content .seller-info .seller-mail {
+    color: #3AE2CE; }
+  .content .seller-info .time-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right; }
+
+.content .content-books {
+  height: 370px;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 7px solid #8361C0;
+  position: relative; }
+  .content .content-books #content-img {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 218px; }
+  .content .content-books .bid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 45%;
+    float: left;
+    z-index: 1000; }
+
+.content .delete-auction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 3px 23px;
+  opacity: 0.8;
+  width: 18%;
+  font-size: 28px;
+  float: right;
+  z-index: 1000;
+  border: none;
+  border-radius: 0;
+  padding-left: 14px; }
+  .content .delete-auction:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: 0.4s;
+    opacity: 0.7; }
+
+.content .content-description {
+  position: absolute;
+  top: 255px;
+  left: 4px;
+  right: 3px; }
+
+.content .seller-info {
+  width: 96%;
+  position: absolute;
+  top: 335px;
+  left: 4px;
+  font-size: 12px; }
+  .content .seller-info .seller-mail {
+    color: #3AE2CE; }
+  .content .seller-info .time-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right; }
+
+.content .content-children {
+  height: 370px;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 7px solid #EA2F6D;
+  position: relative; }
+  .content .content-children #content-img {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 218px; }
+  .content .content-children .bid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 45%;
+    float: left;
+    z-index: 1000; }
+
+.content .delete-auction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 3px 23px;
+  opacity: 0.8;
+  width: 18%;
+  font-size: 28px;
+  float: right;
+  z-index: 1000;
+  border: none;
+  border-radius: 0;
+  padding-left: 14px; }
+  .content .delete-auction:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: 0.4s;
+    opacity: 0.7; }
+
+.content .content-description {
+  position: absolute;
+  top: 255px;
+  left: 4px;
+  right: 3px; }
+
+.content .seller-info {
+  width: 96%;
+  position: absolute;
+  top: 335px;
+  left: 4px;
+  font-size: 12px; }
+  .content .seller-info .seller-mail {
+    color: #3AE2CE; }
+  .content .seller-info .time-left {
+    position: absolute;
+    top: 0;
+    right: 0; }
+
+.content .content-misc {
+  height: 370px;
+  background-color: white;
+  border-radius: 0;
+  border-bottom: 7px solid #E07D32;
+  position: relative; }
+  .content .content-misc #content-img {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    width: 100%;
+    height: 218px; }
+  .content .content-misc .bid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 3px 23px;
+    opacity: 0.8;
+    width: 45%;
+    float: left;
+    z-index: 1000; }
+
+.content .delete-auction {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: black;
+  color: white;
+  padding: 3px 23px;
+  opacity: 0.8;
+  width: 18%;
+  font-size: 28px;
+  float: right;
+  z-index: 1000;
+  border: none;
+  border-radius: 0;
+  padding-left: 14px; }
+  .content .delete-auction:hover {
+    cursor: pointer;
+    color: white;
+    background-color: red;
+    transition: 0.4s;
+    opacity: 0.7; }
+
+.content .content-description {
+  position: absolute;
+  top: 255px;
+  left: 4px;
+  right: 3px; }
+
+.content .seller-info {
+  width: 96%;
+  position: absolute;
+  top: 335px;
+  left: 4px;
+  font-size: 12px; }
+  .content .seller-info .seller-mail {
+    color: #3AE2CE; }
+  .content .seller-info .time-left {
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right; }
+
+.modal-main {
+  width: 85%;
+  text-align: left; }
+  .modal-main .modal-header {
+    background-color: #E5E5E5;
+    margin: 0;
+    padding: 0; }
+    .modal-main .modal-header span {
+      float: left;
+      margin: 5px;
+      font-weight: 600; }
+    .modal-main .modal-header button {
+      float: right;
+      border: none;
+      background-color: #E5E5E5;
+      margin-top: 3px;
+      margin-right: 2px;
+      font-weight: 900; }
+  .modal-main .modal-form {
+    margin-top: 20px; }
+    .modal-main .modal-form .modal-item {
+      margin-bottom: 20px; }
+      .modal-main .modal-form .modal-item span {
+        margin-left: 37px; }
+        @media screen and (max-width: 1328px) {
+          .modal-main .modal-form .modal-item span {
+            margin-left: 41px;
+            margin-bottom: 5px; } }
+      .modal-main .modal-form .modal-item input {
+        margin-left: 41px;
+        width: 84.4%;
+        padding-left: 8px; }
+        @media screen and (max-width: 1328px) {
+          .modal-main .modal-form .modal-item input {
+            display: block;
+            width: 100%; } }
+        @media screen and (max-width: 769px) {
+          .modal-main .modal-form .modal-item input {
+            display: block;
+            width: 85%; } }
+      .modal-main .modal-form .modal-item .error {
+        margin-left: 120px;
+        font-size: 15px;
+        color: red; }
+    .modal-main .modal-form .modal-description {
+      margin-bottom: 20px; }
+      .modal-main .modal-form .modal-description span {
+        margin-left: 37px; }
+        @media screen and (max-width: 1328px) {
+          .modal-main .modal-form .modal-description span {
+            margin-left: 41px;
+            margin-bottom: 5px; } }
+      .modal-main .modal-form .modal-description div {
+        margin-left: 114px;
+        margin-top: -18px; }
+        .modal-main .modal-form .modal-description div input {
+          margin-left: 0;
+          width: 99.5%;
+          padding-left: 8px;
+          height: 96px; }
+          @media screen and (max-width: 1328px) {
+            .modal-main .modal-form .modal-description div input {
+              display: block;
+              width: 100%; } }
+          @media screen and (max-width: 769px) {
+            .modal-main .modal-form .modal-description div input {
+              display: block;
+              width: 85%; } }
+      .modal-main .modal-form .modal-description .error {
+        margin-top: 0;
+        color: red; }
+    .modal-main .modal-form .modal-photos span {
+      margin-left: 37px; }
+      @media screen and (max-width: 1328px) {
+        .modal-main .modal-form .modal-photos span {
+          margin-left: 41px;
+          margin-bottom: 5px; } }
+    .modal-main .modal-form .modal-photos div {
+      margin-left: 114px;
+      margin-top: -18px; }
+      .modal-main .modal-form .modal-photos div input {
+        width: 99.5%;
+        margin-bottom: 13px;
+        padding-left: 8px;
+        height: 40px; }
+        @media screen and (max-width: 1328px) {
+          .modal-main .modal-form .modal-photos div input {
+            display: block;
+            width: 100%; } }
+        @media screen and (max-width: 769px) {
+          .modal-main .modal-form .modal-photos div input {
+            display: block;
+            width: 85%; } }
+    .modal-main .modal-form .modal-photos .error {
+      margin-top: -10px;
+      margin-bottom: 10px;
+      color: red; }
+    .modal-main .modal-form .modal-bid {
+      display: inline-block; }
+      .modal-main .modal-form .modal-bid #starting-price {
+        margin-left: 38px; }
+      .modal-main .modal-form .modal-bid input {
+        margin-left: 20px;
+        width: 80px; }
+      .modal-main .modal-form .modal-bid #price {
+        margin-left: 5px; }
+    .modal-main .modal-form .modal-lasting {
+      display: inline-block;
+      margin-left: 114px; }
+      @media screen and (max-width: 950px) {
+        .modal-main .modal-form .modal-lasting span {
+          margin-left: -40px; } }
+      @media screen and (max-width: 1288px) {
+        .modal-main .modal-form .modal-lasting {
+          margin-top: 15px;
+          margin-left: 76px; } }
+      .modal-main .modal-form .modal-lasting select {
+        width: 170px;
+        height: 28px;
+        margin-left: 25px; }
+    .modal-main .modal-form .modal-category {
+      margin-bottom: 20px; }
+      .modal-main .modal-form .modal-category span {
+        margin-left: 37px; }
+      .modal-main .modal-form .modal-category select {
+        margin-left: 10px;
+        width: 51.4%;
+        padding-left: 8px; }
+      @media screen and (max-width: 1288px) {
+        .modal-main .modal-form .modal-category {
+          margin-top: 15px; } }
+    .modal-main .modal-form .modal-condition {
+      margin-left: 37px; }
+      .modal-main .modal-form .modal-condition #used {
+        margin-left: 64px; }
+  .modal-main .save-button {
+    float: right;
+    margin-right: 150px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px 26px;
+    font-size: 17px;
+    color: white;
+    background-color: #ACB524; }
+    .modal-main .save-button:hover {
+      background-color: #4B5400;
+      transition: 1.5s; }
+
+.ng-invalid[required] {
+  border: 1px solid red; }
+
+.place-bid {
+  border-radius: 0; }
+  .place-bid .modal-header {
+    background-color: #E5E5E5;
+    height: 0;
+    margin-bottom: 20px; }
+    .place-bid .modal-header h4 {
+      margin-top: -12px; }
+    .place-bid .modal-header button {
+      margin-top: -10px;
+      font-size: 20px;
+      margin-right: -5px; }
+      .place-bid .modal-header button span {
+        color: black; }
+  .place-bid .modal-body-electronics {
+    height: 480px;
+    border-bottom: 6px solid #FEB72B; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-electronics {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-electronics .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-electronics .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-electronics .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-electronics .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-electronics .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-electronics .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-electronics .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-electronics .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-electronics .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-electronics .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-electronics .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-electronics .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-electronics .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-electronics .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-electronics .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-electronics .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-electronics .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-electronics .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-electronics .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-electronics .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-electronics .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-electronics .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-electronics .seller span i {
+        margin-left: 5px; }
+  .place-bid .modal-body-fashion {
+    height: 480px;
+    border-bottom: 6px solid #AA288E; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-fashion {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-fashion .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-fashion .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-fashion .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-fashion .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-fashion .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-fashion .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-fashion .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-fashion .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-fashion .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-fashion .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-fashion .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-fashion .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-fashion .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-fashion .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-fashion .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-fashion .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-fashion .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-fashion .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-fashion .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-fashion .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-fashion .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-fashion .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-fashion .seller span i {
+        margin-left: 5px; }
+  .place-bid .modal-body-home {
+    height: 480px;
+    border-bottom: 6px solid #62C6CE; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-home {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-home .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-home .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-home .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-home .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-home .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-home .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-home .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-home .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-home .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-home .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-home .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-home .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-home .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-home .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-home .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-home .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-home .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-home .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-home .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-home .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-home .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-home .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-home .seller span i {
+        margin-left: 5px; }
+  .place-bid .modal-body-books {
+    height: 480px;
+    border-bottom: 6px solid #8361C0; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-books {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-books .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-books .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-books .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-books .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-books .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-books .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-books .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-books .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-books .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-books .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-books .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-books .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-books .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-books .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-books .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-books .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-books .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-books .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-books .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-books .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-books .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-books .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-books .seller span i {
+        margin-left: 5px; }
+  .place-bid .modal-body-children {
+    height: 480px;
+    border-bottom: 6px solid #EA2F6D; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-children {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-children .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-children .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-children .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-children .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-children .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-children .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-children .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-children .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-children .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-children .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-children .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-children .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-children .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-children .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-children .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-children .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-children .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-children .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-children .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-children .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-children .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-children .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-children .seller span i {
+        margin-left: 5px; }
+  .place-bid .modal-body-misc {
+    height: 480px;
+    border-bottom: 6px solid #E07D32; }
+    @media screen and (max-width: 768px) {
+      .place-bid .modal-body-misc {
+        height: auto;
+        padding: 0px 15px; } }
+    .place-bid .modal-body-misc .images .first-img {
+      margin: 15px; }
+      .place-bid .modal-body-misc .images .first-img img {
+        height: 238px;
+        width: 418px; }
+        @media screen and (max-width: 992px) {
+          .place-bid .modal-body-misc .images .first-img img {
+            height: 333px;
+            width: 320px; } }
+        @media screen and (max-width: 768px) {
+          .place-bid .modal-body-misc .images .first-img img {
+            height: 333px;
+            width: 100%; } }
+    .place-bid .modal-body-misc .images .second-img img {
+      height: 238px;
+      width: 418px; }
+    .place-bid .modal-body-misc .images .arrow-left {
+      position: absolute;
+      top: 45%;
+      left: 22px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-misc .images .arrow-left:hover {
+        transition: 0.5s;
+        color: #949494; }
+    .place-bid .modal-body-misc .images .arrow-right {
+      position: absolute;
+      top: 45%;
+      left: 410px;
+      font-size: 24px;
+      color: white; }
+      .place-bid .modal-body-misc .images .arrow-right:hover {
+        transition: 0.5s;
+        color: #949494; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-misc .images .arrow-right {
+          left: 262px; } }
+    .place-bid .modal-body-misc .title {
+      color: #999999;
+      margin-bottom: 15px; }
+    .place-bid .modal-body-misc .description {
+      color: #585556;
+      margin-bottom: 65px;
+      font-size: 15px; }
+      @media screen and (max-width: 992px) {
+        .place-bid .modal-body-misc .description {
+          padding: 0 6px; } }
+    .place-bid .modal-body-misc .time {
+      margin-bottom: 15px; }
+      .place-bid .modal-body-misc .time span {
+        color: #7E7E7E; }
+        .place-bid .modal-body-misc .time span i {
+          margin-right: 4px;
+          font-size: 12px; }
+        .place-bid .modal-body-misc .time span b {
+          margin-left: 10px; }
+    .place-bid .modal-body-misc .price {
+      margin-bottom: 15px; }
+    .place-bid .modal-body-misc .place-bid {
+      margin-bottom: 35px; }
+      .place-bid .modal-body-misc .place-bid input {
+        width: 12%;
+        padding: 6px;
+        border: 1px solid #EBEBEB;
+        color: #777777; }
+      .place-bid .modal-body-misc .place-bid button {
+        margin-top: -5px;
+        width: 28%;
+        border-radius: 3px;
+        color: white;
+        background-color: #ACB803;
+        margin-left: 15px; }
+    .place-bid .modal-body-misc .seller span {
+      color: #83B3D8; }
+      .place-bid .modal-body-misc .seller span i {
+        margin-left: 5px; }

@@ -1,0 +1,89 @@
+<button type="button" class="btn sell-button" data-toggle="modal" data-target=".bs-example-modal-lg">SELL</button>
+
+<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+  <div class="modal-dialog modal-lg modal-main" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <span>Add item for sale</span>
+        <button>X</button>
+      </div>
+      <div class="modal-form">
+        <form #addItemForm="ngForm">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <div class="modal-item">
+                <span>Item:</span>
+                <input type="text" placeholder="Item name" [(ngModel)]="addingItem.Title" name="itemName" required
+                       #itemName="ngModel">
+                <div [hidden]="itemName.valid || itemName.pristine" class="error">
+                  Please enter the item name!
+                </div>
+              </div>
+              <div class="modal-description">
+                <span>Description:</span>
+                <div>
+                  <input type="text" [(ngModel)]="addingItem.Description" name="itemDescription" required
+                         #itemDesc="ngModel">
+                </div>
+                <div [hidden]="itemDesc.valid || itemDesc.pristine" class="error">
+                  Please enter the item name!
+                </div>
+              </div>
+              <div class="modal-photos">
+                <span>Photos:</span>
+                <div>
+                  <input type="text" [(ngModel)]="addingItem.Picture1" name="itemPicture1" required #itemPict="ngModel">
+                  <input type="text" [(ngModel)]="addingItem.Picture2" name="itemPicture2">
+                  <input type="text" [(ngModel)]="addingItem.Picture3" name="itemPicture2">
+                </div>
+                <div [hidden]="itemPict.valid || itemPict.pristine" class="error">
+                  Please enter the item name!
+                </div>
+              </div>
+              <div class="modal-bid">
+                <span id="starting-price">Start Auction bidding at:</span>
+                <input type="number" [(ngModel)]="addingItem.StartBid" name="itemBid">
+                <span id="price">NIS</span>
+              </div>
+
+              <div class="modal-lasting">
+                <span>Lasting for</span>
+                <select name="weeks" [(ngModel)]="weeks" (ngModelChange)="countdown()">
+                  <option [ngValue]="1">1 Week</option>
+                  <option [ngValue]="2">2 Weeks</option>
+                  <option [ngValue]="3">3 Weeks</option>
+                  <option [ngValue]="4">4 Weeks</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="modal-category">
+                <span>Category:</span>
+                <select name="itemCategories" [(ngModel)]="addingItem.CategoryId" required #itemCategory="ngModel">
+                  <option [ngValue]="1">Electronics</option>
+                  <option [ngValue]="2">Fashion</option>
+                  <option [ngValue]="3">Home</option>
+                  <option [ngValue]="4">Books</option>
+                  <option [ngValue]="5">Children</option>
+                  <option [ngValue]="6">Misc</option>
+                </select>
+              </div>
+              <div class="modal-condition">
+                <span>Condition</span>
+                <input checked type="radio" [value]=1 name="itemCond"
+                       [(ngModel)]="addingItem.IsItemConditionNew" required> New <br>
+                <input type="radio" [value]=0 name="itemCond" id="used" [(ngModel)]="addingItem.IsItemConditionNew"
+                       required> Used
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 pull-right">
+              <button class="btn save-button" (click)="addItem()" [disabled]="addItemForm.invalid">save and Preview</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

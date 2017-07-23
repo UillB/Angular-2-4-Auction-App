@@ -1,0 +1,186 @@
+[
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 2,
+      "Name": ""
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 2,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 3,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 4,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 5,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 6,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  },
+  {
+    "Id": 1,
+    "Title": "Product 1",
+    "Description": "This is first test item and his description bla bla bla bla bla bla bla bla",
+    "StartTime": 1491368604022,
+    "EndTime": 1491368604023,
+    "StartBid": 100.50,
+    "IsItemNew": false,
+    "Picture1": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture2": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture3": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "Picture4": "http://ikrossovki.com/images/BRANDS/Nike/Roshe-Run/nike-roshe-run-midnight-navy.jpg",
+    "User": {
+      "Id": 1,
+      "Name": "Vova Burd",
+      "Email": "vova-test@gmail.com",
+      "LastLoginTime": 1491368605022,
+      "CreatedOn": 1491369604022
+    },
+    "Category": {
+      "Id": 1,
+      "Name": "Fashion"
+    },
+    "highestBid": null,
+    "bidCount": 3
+  }
+]
