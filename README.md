@@ -1,8 +1,7 @@
-https://angular-auction.herokuapp.com/
 
 # Angular 2 / 4 Auction
 
-#Demo: [https://angular-auction.herokuapp.com/](https://angular-auction.herokuapp.com/)
+# Demo: [https://angular-auction.herokuapp.com/](https://angular-auction.herokuapp.com/)
 
 This small but very interesting Angular application demonstrates main Angular features;
 
